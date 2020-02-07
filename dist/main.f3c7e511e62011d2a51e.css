@@ -1,0 +1,109 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+    --main-bg-color: #005aa8;
+    --second-bg-color: #00cecb;
+  }
+html {
+  text-align: center;
+
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  padding: 2rem 3rem;
+}
+.line {
+  margin: 0.8rem auto;
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #8be5c3;
+  position: relative;
+}
+.line::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 4px solid #2b78fd;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.icon {
+  font-size: 2rem;
+}
+
+header {
+  font-family: "Geomantis", sans-serif;
+  height: 135px;
+}
+
+header .container {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.left-nav-menu {
+  color: #00204a;
+  display: flex;
+}
+
+.ion-md-menu {
+  display: none;
+}
+
+.nav-titel {
+  color: #000000;
+  font-size: 4rem;
+}
+.left-nav-menu > * {
+  margin: 0 1rem;
+}
+
+.left-nav-menu ul {
+  display: flex;
+}
+.left-nav-menu li {
+  margin: 0 1rem;
+}
+
+.menu-butons > * {
+  color: #fff;
+  margin: 0 1rem;
+}
+.left-nav-btn {
+  background-color: var(--main-bg-color);
+}
+
+.right-nav-btn {
+  background-color: var(--second-bg-color);
+}
+
